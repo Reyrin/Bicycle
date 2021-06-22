@@ -1,6 +1,29 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
+html {
+    font-size: 62.5%;
+}
+
 body {
 	font-family: 'Lato', sans-serif;
+    color: #848789;
+    font-size: 1.6rem;
 }
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+@import "blocks/wrap";
+@import "blocks/mainscreen";
+@import "blocks/header";
+@import "blocks/main-logo";
+@import "blocks/nav";
+@import "blocks/container";
