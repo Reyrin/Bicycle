@@ -1,0 +1,96 @@
+.brands {
+    display: grid;
+
+    grid-template-areas: 
+        "b1 b1 b2"
+        "b1 b1 b2"
+        "b1 b1 b3"
+        "b4 b6 b6"
+        "b4 b6 b6"
+        "b5 b6 b6"
+        "b7 b8 b10"
+        "b7 b8 b10"
+        "b7 b9 b10";
+
+    &__item {
+        &_b1 {
+            grid-area: b1;
+            background: url(../../img/left-box-1.jpg) center (center/cover) no-repeat;
+        }
+
+        &_b2 {
+            grid-area: b2;
+        }
+
+        &_b3 {
+            grid-area: b3;
+            background: url(../../img/seat-red.jpg) center (center/cover) no-repeat;
+            padding-bottom: 37%;
+        }
+
+        &_b4 {
+            grid-area: b4;
+        }
+
+        &_b5 {
+            grid-area: b5;
+            background: url(../../img/seat-black.jpg) center (center/cover) no-repeat;
+            padding-bottom: 37%;
+        }
+
+        &_b6 {
+            grid-area: b6;
+            background: url(../../img/left-box-2.jpg) center (center/cover) no-repeat;
+        }
+
+        &_b7 {
+            grid-area: b7;
+            background: url(../../img/red-frame.jpg) center (center/cover) no-repeat;
+        }
+
+        &_b8 {
+            grid-area: b8;
+        }
+
+        &_b9 {
+            grid-area: b9;
+            background: url(../../img/chrome-wheels.jpg) center (center/cover) no-repeat;
+            padding-bottom: 37%;
+        }
+
+        &_b10 {
+            grid-area: b10;
+            background: url(../../img/red-bike.jpg) center (center/cover) no-repeat;
+        }
+    }
+
+    &__bg {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__content {
+        position: relative;
+        padding: 6rem 4rem 5rem;
+
+        p {
+            font-size: 16px;
+            text-align: left;
+        }
+
+        &::after {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            margin: 0 0 0 -10px;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid #fff;
+        }
+    }
+}
