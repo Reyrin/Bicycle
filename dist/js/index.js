@@ -1,1 +1,1 @@
-"use strict";console.log(123);
+"use strict";var swiper=new Swiper(".swiper-container",{pagination:{el:".swiper-pagination"},grabCursor:!0,keyboard:{enabled:!0,onlyInViewport:!0,pageUpDown:!0},autoHeight:!0});
