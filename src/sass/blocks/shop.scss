@@ -1,0 +1,117 @@
+.shop {
+    &__content {
+        display: grid;
+        grid-template-areas: 
+            "s1 s2 s4 s5 s6 s6"
+            "s3 s3 s4 s5 s7 s8";
+    }
+
+    &__item {
+        position: relative;
+        transition: all .4s linear;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: #58a589;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            opacity: 0;
+            transition:  opacity .4s ease-out;
+        }
+
+        &:hover {
+            &::before {         
+                opacity: .8;
+            }
+            
+            .shop__shop-now {
+                opacity: 1;
+                z-index: 2;
+                visibility: visible;
+            }
+        }
+
+        &_s1 {
+            grid-area: s1;   
+        }
+
+        &_s2 {
+            grid-area: s2;   
+        }
+
+        &_s3 {
+            grid-area: s3;   
+        }
+
+        &_s4 {
+            grid-area: s4;   
+        }
+
+        &_s5 {
+            grid-area: s5;   
+        }
+
+        &_s6 {
+            grid-area: s6;   
+        }
+
+        &_s7 {
+            grid-area: s7;   
+        }
+
+        &_s8 {
+            grid-area: s8;   
+        }
+    }
+
+    &__bg {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__footer {
+        padding: 7.5rem 0;
+        background-color: #282f35;
+        text-align: center;
+    }
+
+    &__btn {
+        display: inline-block;
+        padding: 2rem 6rem;
+        color: #fff;
+        text-transform: uppercase;
+        border: 1px solid #94979a;
+    }
+
+    &__shop-now {
+        visibility: hidden;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition:  opacity .5s ease-out;
+        opacity: 0;
+    }
+
+    &__icon {
+        width: 50px;
+        height: 30px;
+    }
+
+    &__text {
+        margin: .5rem 0 0;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        color: #fff;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: center;
+    }
+}
