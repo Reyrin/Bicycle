@@ -87,6 +87,33 @@
         color: #fff;
         text-transform: uppercase;
         border: 1px solid #94979a;
+        position: relative;
+        background-color: transparent;
+        z-index: 2;
+
+        &::before {
+            content: '';
+            transition:0.5s all ease;
+            position:absolute;
+            top:0;
+            left:50%;
+            right:50%;
+            bottom:0;
+            opacity:0;
+            background-color: #58a589;
+            z-index:-1;
+        }
+
+        &:hover {
+            color: #fff;
+            border-color: #fff;
+            &::before {
+                transition:0.5s all ease;
+                left:0;
+                right:0;
+                opacity:1;
+            }
+        }
     }
 
     &__shop-now {

@@ -12,22 +12,22 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <div class="wrap">
+    <div class="wrap" id="anchor-wrap">
         <div class="mainscreen">
             <header class="header">
                 <img src="img/main-logo.png" alt="Bicycle" class="main-logo">
                 <nav class="nav">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Shop</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="#anchor-about-us" class="nav__link">About Us</a></li>
+                        <li class="nav__item"><a href="#anchor-work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#anchor-shop" class="nav__link">Shop</a></li>
+                        <li class="nav__item"><a href="#anchor-contacts" class="nav__link">Contact</a></li>
                     </ul>
                 </nav>
             </header>
         </div>
         <main>
-            <section class="generation">
+            <section class="generation" id="anchor-about-us">
                 <div class="container">
                     <div class="generation__block block">
                         <img src="img/cog-icon.png" alt="Chain Icon" class="block__icon">
@@ -36,47 +36,47 @@
                     </div>
                 </div>
             </section>
-            <section class="brands">
-                <div class="brands__item brands__item_b1">
+            <section class="brands" id="anchor-work">
+                <div class="brands__item brands__item_b1" data-aos="fade-right">
                     <div class="brands__bg">
                         <img src="img/bicycle-logo.png" alt="" class="brands__icon">
                     </div>
                 </div>
-                <div class="brands__item brands__item_b2 block">
+                <div class="brands__item brands__item_b2 block" data-aos="fade-left">
                     <div class="brands__content">
                         <img src="img/frame-icon.png" alt="Chain Icon" class="block__icon">
                         <h2 class="block__title">Vintage Olivia</h2>
                         <p class="block__text block__text_line">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
                     </div>
                 </div>
-                <div class="brands__item brands__item_b3"></div>
-                <div class="brands__item brands__item_b4 block">
+                <div class="brands__item brands__item_b3" data-aos="fade-left"></div>
+                <div class="brands__item brands__item_b4 block" data-aos="fade-right">
                     <div class="brands__content">
                         <img src="img/mech-icon.png" alt="Chain Icon" class="block__icon">
                         <h2 class="block__title">La Boriosa</h2>
                         <p class="block__text block__text_line">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
                     </div>
                 </div>
-                <div class="brands__item brands__item_b5"></div>
-                <div class="brands__item brands__item_b6">
+                <div class="brands__item brands__item_b5" data-aos="fade-right"></div>
+                <div class="brands__item brands__item_b6" data-aos="fade-left">
                     <div class="brands__bg">
                         <img src="img/vintage-logo.png" alt="" class="brands__icon">
                     </div>
                 </div>
-                <div class="brands__item brands__item_b7">
+                <div class="brands__item brands__item_b7" data-aos="fade-right">
                     <div class="brands__bg">
                        <img src="img/bicycles-sml-logo.png" alt="" class="brands__icon"> 
                     </div>
                 </div>
                 <div class="brands__item brands__item_b8 block">
                     <div class="brands__content">
-                        <img src="img/frame-icon.png" alt="Chain Icon" class="block__icon">
+                        <img src="img/frame-icon.png" alt="Chain Icon" class="block__icon" data-aos="fade-up">
                         <h2 class="block__title">Retrò Bike - M. Hulot</h2>
                         <p class="block__text block__text_line">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
                     </div>
                 </div>
-                <div class="brands__item brands__item_b9"></div>
-                <div class="brands__item brands__item_b10"></div>
+                <div class="brands__item brands__item_b9" data-aos="fade-up"></div>
+                <div class="brands__item brands__item_b10" data-aos="fade-left"></div>
             </section>
             <section class="comments">
                 <div class="swiper-container">
@@ -113,7 +113,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </section>
-            <section class="shop">
+            <section class="shop" id="anchor-shop">
                 <div class="shop__content">
                     <a href="#" class="shop__item shop__item_s1">
                         <img src="img/l1.jpg" alt="" class="shop__bg">
@@ -174,11 +174,11 @@
                 </div>
                 <div class="shop__footer">
                     <div class="container">
-                        <a href="#" class="shop__btn">Discover The Shop</a>
+                        <a href="#anchor-wrap" class="shop__btn">Discover The Shop</a>
                     </div>
                 </div>
             </section>
-            <section class="contacts">
+            <section class="contacts" id="anchor-contacts">
                 <div class="container">
                     <div class="contacts__content">
                         <img src="img/main-logo.png" alt="Bicycle" class="main-logo main-logo_top-0">
@@ -240,6 +240,7 @@
     </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

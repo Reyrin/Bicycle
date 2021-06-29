@@ -26,6 +26,7 @@
             grid-area: b3;
             background: url(../img/seat-red.jpg) center (center/cover) no-repeat;
             padding-bottom: 37%;
+            z-index: -1;
         }
 
         &_b4 {
@@ -36,6 +37,7 @@
             grid-area: b5;
             background: url(../img/seat-black.jpg) center (center/cover) no-repeat;
             padding-bottom: 37%;
+            z-index: -1;
         }
 
         &_b6 {
@@ -56,6 +58,7 @@
             grid-area: b9;
             background: url(../img/chrome-wheels.jpg) center (center/cover) no-repeat;
             padding-bottom: 37%;
+            z-index: -1;
         }
 
         &_b10 {
