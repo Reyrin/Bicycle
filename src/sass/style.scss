@@ -20,6 +20,13 @@ body {
 
 a {
     text-decoration: none;
+    text-decoration: none;
+}
+
+ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 @import "blocks/wrap";
@@ -33,3 +40,7 @@ a {
 @import "blocks/brands";
 @import "blocks/comments";
 @import "blocks/shop";
+@import "blocks/form";
+@import "blocks/contacts";
+@import "blocks/social";
+@import "blocks/footer";

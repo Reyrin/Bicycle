@@ -1,0 +1,43 @@
+.footer {
+    padding: 10rem 0;
+    background-color: #f7f7f7;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        flex: 0 1 33.33%;
+    }
+
+    &__address {
+        font-size: 1.4rem;
+        color: #848789;
+        line-height: 2rem;
+
+        & p {
+            margin: 0;
+        }
+
+        & p:first-child {
+            font-weight: 700;
+        }
+    }
+
+    &__by {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        color: #848789;
+        font-style: italic;
+        line-height: 1.2;
+        text-align: right;
+        padding-right: 9px;
+    }
+}

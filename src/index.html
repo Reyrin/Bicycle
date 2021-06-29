@@ -178,9 +178,65 @@
                     </div>
                 </div>
             </section>
-            <section class="contact"></section>
+            <section class="contacts">
+                <div class="container">
+                    <div class="contacts__content">
+                        <img src="img/main-logo.png" alt="Bicycle" class="main-logo main-logo_top-0">
+                        <h3 class="contacts__title">Stay on the saddle!</h3>
+                        <form action="#" method="POST" class="form">
+                            <input 
+                                required
+                                type="text" 
+                                name="email" 
+                                placeholder="enter your email..."
+                                pattern="((\w+[-.]\w+)*|(\w+))@((\w+)|(\w+[-]\w+)*)(\.\w{2,})+"
+                                class="form__input"
+                            />
+                            <span class="form__error">Entery e-mail format: name@domain.com</span>
+                            <button type="submit" class="form__btn">Go</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer></footer>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__item">
+                        <div class="footer__address">
+                            <p>AOD New York</p>
+                            <p>2250 Lexinston Avenue</p>
+                            <p>New York, NY 10035 - info@domain.com</p>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <ul class="social">
+                            <li class="social__item">
+                                <a href="https://twitter.com/" target="_blank" class="social__link">
+                                    <img src="img/social/twitter-icon.png" alt="Twitter">
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="https://www.facebook.com/" target="_blank" class="social__link">
+                                    <img src="img/social/facebook-icon.png" alt="Facebook">
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="https://www.pinterest.ru/" target="_blank" class="social__link">
+                                    <img src="img/social/pintrest-icon.png" alt="Pintrest">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__by">
+                            <p class="footer__text">Handcrafted by</p>
+                            <img src="img/yebo-icon.png" alt="Yebo Icon" class="footer__logo">
+                        </div>
+                    </div>       
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

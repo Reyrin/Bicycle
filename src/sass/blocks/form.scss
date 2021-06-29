@@ -1,0 +1,51 @@
+.form {
+    display: flex;
+    height: 7rem;
+    position: relative;
+
+    &__input {
+        border: 1px solid #d3d7d9;
+        margin-right: .8rem;
+        flex-grow: 1;
+        font-size: 2rem;
+        font-style: italic;
+        color: #929292;
+        padding: 0 2.5rem;
+
+        &:focus {
+            border: 2px solid #d3d7d9;
+        }
+
+        &:valid:not(:placeholder-shown) {
+            border-color: #64c29e;
+        }
+
+        &:invalid:not(:placeholder-shown) {
+            border-color: #c43636;
+        }
+
+        &:invalid:not(:placeholder-shown) + .form__error {
+            display: block;
+        }
+    }
+
+    &__btn {
+        font-size: 2.4rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #64c29e;
+        border: none;
+        cursor: pointer;
+        flex-basis: 12.5rem;
+    }
+
+    &__error {
+        display: none;
+        position: absolute;
+        font-size: 16px;
+        bottom: -20px;
+        left: 5px;
+        color: #c43636;
+    }
+}

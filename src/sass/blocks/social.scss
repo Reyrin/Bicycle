@@ -1,0 +1,14 @@
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+        margin: 0 .75rem;
+        transition: transform .4s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
