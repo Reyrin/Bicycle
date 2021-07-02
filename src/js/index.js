@@ -28,3 +28,24 @@ document.querySelectorAll('a[href^="#anchor"]').forEach(anchor => {
         });
     });
 });
+
+// Menu
+const burger = document.querySelector('.nav__burger');
+const nav = document.querySelector('.nav__list');
+const links = document.querySelectorAll('a[href^="#anchor"]');
+
+burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    nav.classList.toggle('active');
+});
+
+
+links.forEach(item => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        burger.classList.remove('active');
+        nav.classList.remove('active');
+    });
+});
+

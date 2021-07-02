@@ -4,6 +4,10 @@
 
     .swiper-container {
         min-height: 250px;
+
+        @include breakpoint($mobilesmall-bp) {
+            min-height: 300px;
+        }
     }
 
     .swiper-pagination-bullet-active {

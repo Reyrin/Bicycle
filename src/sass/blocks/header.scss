@@ -1,4 +1,7 @@
 .header {
-    position: relative;
     padding: 7rem 0;
+
+    @include breakpoint($mobile-bp) {
+        padding: 0;
+    }
 }

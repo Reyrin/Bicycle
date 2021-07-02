@@ -12,6 +12,22 @@
         "b7 b8 b10"
         "b7 b9 b10";
 
+    @include breakpoint($tablet-bp) {
+        grid-template-areas: 
+            "b1"
+            "b1"
+            "b2"
+            "b3"
+            "b4"
+            "b5"
+            "b6"
+            "b7"
+            "b7"
+            "b8"
+            "b9"
+            "b10";
+    }
+
     &__item {
         &_b1 {
             grid-area: b1;
@@ -64,6 +80,16 @@
         &_b10 {
             grid-area: b10;
             background: url(../img/red-bike.jpg) center (center/cover) no-repeat;
+        }
+
+        @include breakpoint($tablet-bp) {
+            &_b1, &_b5, &_b6, &_b7 {
+                padding: 20%;
+            }
+
+            &_b10 {
+                display: none;
+            }
         }
     }
 

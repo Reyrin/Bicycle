@@ -4,10 +4,12 @@
 
     display: block;
     position: absolute;
-    top: 50%;
+    top: 7.5rem;
     left: 50.5%;
 
     transform: translate(-50%, -50%);
+
+    z-index: 1;
 
     &_top-0 {
         top: 0;
