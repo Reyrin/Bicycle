@@ -1,5 +1,7 @@
 # Bicycle
 
+![Bicycle](https://user-images.githubusercontent.com/51198976/124307062-ef71d680-db6f-11eb-9037-341888d48deb.png)
+
 ### Demo - https://reyrin.github.io/Bicycle/
 
 ## I used - 
