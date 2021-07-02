@@ -4,7 +4,7 @@
   "description": "HTML, CSS, JS",
   "main": "index.js",
   "scripts": {
-    "start": "gulp",
+    "dev": "gulp",
     "deploy": "gh-pages -d dist"
   },
   "author": "",
